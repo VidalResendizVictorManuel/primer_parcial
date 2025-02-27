@@ -68,13 +68,13 @@
 $username = "root";
 $pasword = "";
 $servername = "localhost";
-$database = "uno_contra_odos";         
+$database = "pokemon";         
 
 $conexion = new mysqli($servername, $username, $pasword,  $database);
 if($conexion->connect_error){
   die("Conexion Fallida: " .$conexion->connect_error);
 }
-$sql = "SELECT * FROM personajes";
+$sql = "SELECT * FROM siniestro";
 $resultado = $conexion->query($sql);
 
 ?>
@@ -128,9 +128,10 @@ $resultado = $conexion->query($sql);
     <?php while ($fila = $resultado->fetch_assoc()): ?>
       <tr>
         <td><?php echo $fila["id"]; ?></td>}
-        <td><?php echo $fila["Nombre"]; ?></td>
-        <td><?php echo $fila["Apellido"]; ?></td>}
-        <td><?php echo $fila["Maldiciones"]; ?></td>
+        <td><?php echo $fila["pokemones"]; ?></td>
+        <td><?php echo $fila["evoluciones"]; ?></td>}
+        <td><?php echo $fila["tipo"]; ?></td>
+        <td><?php echo $fila["debilidades"]; ?></td>
       </tr>
     <?php endwhile; ?>
   </table>

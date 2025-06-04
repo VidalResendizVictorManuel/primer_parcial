@@ -1,0 +1,17 @@
+CREATE TABLE alumnos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  numero_control VARCHAR(10) UNIQUE NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  apellido_paterno VARCHAR(50) NOT NULL,
+  apellido_materno VARCHAR(50),
+  id_edad INT NOT NULL,
+  id_colonia INT NOT NULL,
+  id_especialidad INT NOT NULL,
+  id_genero INT NOT NULL,
+  correo VARCHAR(15) UNIQUE,
+  telefono VARCHAR(15),
+  fecha_ingreso DATE NOT NULL,
+  FOREIGN KEY (id_edad) REFERENCES edades(id),
+  FOREIGN KEY (id_colonia) REFERENCES colonias(id),
+  FOREIGN KEY (id_especialidad) REFERENCES especialidades(id),
+  FOREIGN KEY (id_genero) REFERENCES generos(id)

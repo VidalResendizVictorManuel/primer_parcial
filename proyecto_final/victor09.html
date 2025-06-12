@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Manuel Vidal Resendiz</title>
+</head>
+<body>
+    
+<nav class="navbar navbar-light" style="background-color: rgb(22, 27, 21);">
+  <div class="contener">
+    <a class="navbar-brand" href="index.html" style="color: rgb(221, 159, 159);">Inicio</a>
+    <!-- Un boton de inicio que lleva a si mismo, de color blanco, aqui pueden poner el color que quieran dependiendo de su estilo -->
+   
+    <!-- A continuacion es el menu dropdown para poner las ligas a las practicas -->
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="nav navbar-nav">
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 1
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor01.php">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor02.php">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor03.php">Meter Datos 3</a><br>
+          </div>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 2
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor04.php">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor05.php">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor06.html">Meter Datos 3</a><br> 
+          </div>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 3
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor07.html">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor08.html">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor09.html">Meter Datos 3</a><br>
+          </div>
+       </li>
+     </ul>
+     </div>
+   </div>
+  </nav>
+
+
+    <style>
+        :root {
+           
+--color-primario: #1d3241;
+--color-secundario: #420b11;
+--color-terciario: #18113a;
+--color-cuarto: #0d3d9d;
+--color-quinto: #071013 ;
+        }   
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--color-primario);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        header {
+            padding: 16px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: var(--color-secundario);
+        }
+        .search {
+            background-color: transparent;
+            border: 4px solid var(--color-quinto);
+            border-radius: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            padding: 10px 15px;
+            color: var(--color-terceario);
+        }
+        .search::placeholder {
+            color: var(--color-cuarto);
+        }
+        .search:focus {
+            outline: none;
+            background-color: var(--color-quinto);
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .personaje {
+            width: 300px;
+            margin: 15px;
+            background-color: var(--color-quinto);
+            box-shadow: 10px 15px 1px var(--color-secundario);
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .personaje img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+        .personaje-info {
+            color: var(--color-quinto);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4px;
+            padding: 0.8px 15px 15px;
+            letter-spacing: 5px;
+        }
+        .personaje-info h1 {
+            color: var(--color-primario);
+            margin-top: 0;
+        }
+        .personaje-info span {
+            background-color: var(--color-primario);
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .overview {
+            background-color: var(--color-secundario);
+            padding: 32px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            max-height: 100%;
+            transform: translateY(101%);
+            overflow-y: auto;
+            transition: transform 1s ease-in;
+        }
+        .personaje:hover .overview {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+
+   <header>
+        <form id="form">
+            <img src="logo.jpg" alt="logo" style="width: 100px;">
+            <input type="text" id="search" class="search" placeholder="busca tu pelicula">
+        </form>
+    </header>
+    <main id="main"></main>
+    <script>
+               const API_RICK = 'https://rickandmortyapi.com/api/character';
+               const API_HP = 'https://hp-api.onrender.com/api/characters';
+        
+        
+        const main = document.getElementById('main');
+        const form = document.getElementById('form');
+        const search = document.getElementById('search');
+
+        getAllCharacters();
+
+        async function getAllCharacters() {
+            const [rmRes, hpRes] = await Promise.all([
+              fetch(API_RICK).then(res => res.json()),
+              fetch(API_HP).then(res =>res.json())
+
+            ]);
+
+            const rickChars = rmRes.results || [];
+            const hpChars = hpRes || [];
+
+            showCharacters([...rickChars, ...hpChars]);
+            
+        }
+
+function showCharacters(characters) {
+    main.innerHTML = '';
+    characters.forEach((char) => {
+        let name = char.name || 'Desconocido';
+        let image = char.image  ||  ''; 
+        let species = char.species || '';
+        let gender = char.gender || '';
+        let actor = char.actor || 'Desconocido';
+        let house = char.house || '';
+        let status = char.status || (char.alive === false ? 'Deceased' : 'Alive');
+                
+       const charElement = document.createElement('div');
+        charElement.classList.add('personaje');
+        charElement.innerHTML = `
+            <img src="${image}" alt="${name}">
+
+            <div class="personaje-info">
+                <h1>${name}</h1>
+                <span>${species}</span>
+            </div>
+
+            <div class="overview">
+                <p><strong>Casa:</strong> ${name}</p>
+                <p><strong>Actor:</strong> ${actor}</p>
+                <p><strong>Género:</strong> ${gender}</p>
+                <p><strong>Estado:</strong> ${status}</p>
+            </div>
+
+        `;
+        main.appendChild(charElement);
+    });
+}
+
+
+
+
+            form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const searchTerm = search.value.toLowerCase();
+            
+            if (searchTerm && searchTerm !== '') {
+                getAllCharacters(`${API_RICK}?name=${searchTerm}`);
+                search.value = '';
+            } else {
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+
+
+</body>
+</html>

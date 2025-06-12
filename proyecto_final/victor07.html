@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Manuel Vidal Resendiz</title>
+</head>
+<body>
+    
+<nav class="navbar navbar-light" style="background-color: rgb(22, 27, 21);">
+  <div class="contener">
+    <a class="navbar-brand" href="index.html" style="color: rgb(221, 159, 159);">Inicio</a>
+    <!-- Un boton de inicio que lleva a si mismo, de color blanco, aqui pueden poner el color que quieran dependiendo de su estilo -->
+   
+    <!-- A continuacion es el menu dropdown para poner las ligas a las practicas -->
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="nav navbar-nav">
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 1
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor01.php">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor02.php">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor03.php">Meter Datos 3</a><br>
+          </div>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 2
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor04.php">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor05.php">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor06.html">Meter Datos 3</a><br> 
+          </div>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Unidad 3
+         </a>
+         <!-- Lo que sigue son los menus que se van a desplegar hacia abajo, cada uno tendra el nombre de su practica, ejemplo, practica uno se llamara su nombre el numero de la practica ZZ terminando con HTML -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="victor07.html">Mosrtrar Datos 1</a><br>
+           <a class="dropdown-item" href="victor08.html">Mosrtrar Datos 2</a><br>
+           <a class="dropdown-item" href="victor09.html">Meter Datos 3</a><br>
+          </div>
+       </li>
+     </ul>
+     </div>
+   </div>
+  </nav>
+
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+
+        }
+        :root{
+            --primary-coloir: #1F0318;
+            --secondary-color: #E5F2C9;
+            --terceary-color: #1E1A1D;
+        }
+
+        body{
+          background-color: var(--primary-coloir);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+
+        }
+
+        header{
+            padding: 16px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: var(--terceary-color);
+        }
+
+        .search{
+            background-color: aqua;
+            border: 5px solid var(--secondary-color);
+            border-radius: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            padding: 10px 16px;
+            color: var(--primary-coloir);
+        
+        }
+        .search::placeholder{
+            color: var(--terceary-color);
+        }
+            
+        .search:focus{
+            outline: none;
+            background-color: var(--secondary-color);
+        }
+        
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+         
+        .movie{
+            width: 300px;
+            margin: 15px;
+            background-color: var(--terceary-color);
+            box-shadow: 0 5px 5px black;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+
+        }
+        .movie img{
+            width: 100%;
+        }
+        .movie-info{
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4px;
+            padding: 8px 15px 15px;
+            letter-spacing: 8px;
+        }
+        .movie-info h3{
+            margin-top: 0;
+        }
+        .movie-info span{
+            background-color: var(--primary-coloir);
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+
+        .movie-info span.blue {
+            color: blue;
+        }
+        .movie-info  span.orange{
+            color: orange;
+        }
+        .movie-info span.red{
+            color: red;
+        }
+        .overview{
+            background-color: #fff;
+            padding: 32px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            max-height: 100%;
+            transform: translateY(101%);
+            overflow-y: auto;
+            transition: transform 0.3s ease-in;
+        }
+        
+        .movie:hover .overview{
+            transform: translateY(0);
+        }
+
+
+    </style>
+
+
+   <header>
+        <form id="form">
+            <img src="logo.jpg" alt="logo" style="width: 100px;">
+            <input type="text" id="search" class="search" placeholder="busca tu pelicula">
+        </form>
+    </header>
+    <main id="main"></main>
+    <script>
+        const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';
+        const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
+        const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="';
+
+        const main = document.getElementById('main');
+        const form = document.getElementById('form');
+        const search = document.getElementById('search');
+
+        getMovies(API_URL);
+
+
+        getMovies(API_URL);
+
+        async function getMovies(url) {
+            const res = await fetch(url);
+            const data = await res.json();
+            showMovies(data.results); 
+        }
+
+        function showMovies(movies) {
+            main.innerHTML = '';
+
+            movies.forEach((movie) => {
+                const { title, poster_path, vote_average, overview } = movie;
+                const movieElements = document.createElement('div');
+                movieElements.classList.add('movie');
+                movieElements.innerHTML = `
+                    <img src="${IMG_PATH + poster_path}" alt="${title}"> 
+                    <div class="movie-info">
+                        <h3>${title}</h3>
+                        <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+                    </div>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        ${overview}
+                    </div>`
+                main.appendChild(movieElements);
+            })}
+
+        function getClassByRate(vote) {
+            if (vote >= 8) {
+                return 'blue';
+            } else if (vote >= 5) {
+                return 'orange';
+            } else {
+                return 'red';
+            }
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const searchTerm = search.value;
+            if (searchTerm && searchTerm !== '') {
+                getMovies(SEARCH_API + searchTerm)
+                search.value = '';
+            } else {
+                window.location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
